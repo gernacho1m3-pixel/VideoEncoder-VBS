@@ -5,9 +5,9 @@ We will keep updating this website so it can be used by all users and for all us
 
 We apologize if we activated the MIT license. This was done to protect the files from leaking. In the future, we will make this website project open source so you can learn about the website.
 
-#Tools
-V
+##Tools
 We use [ffmpeg](https://ffmpeg.org/) tools which are open-source and easy to access, This really helps us in developing this website project.
 
+##Contributors
 Creator: Gernacho1m3
 Team: VBS-Project
