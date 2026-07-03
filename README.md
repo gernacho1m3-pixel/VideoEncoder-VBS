@@ -8,6 +8,6 @@ We apologize if we activated the MIT license. This was done to protect the files
 ##Tools
 We use [ffmpeg](https://ffmpeg.org/) tools which are open-source and easy to access, This really helps us in developing this website project.
 
-##Contributors
+###Contributors
 Creator: Gernacho1m3
 Team: VBS-Project
