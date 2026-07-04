@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>VideoConverter By AEX-Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>VideoConverter</h1>
+        
+        <p>Professional Video Converter powered by FFmpeg</p>
+
+        <input
+        type="file"
+        id="videoInput"
+        accept="video/*">
+
+    <button id="uploadBtn">
+        Upload Video
+    </button>
+
+    <div id="metadata"></div>
+
+        <div id="server-status">
+            Checking Backend...
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- Video -->
+
+        <select id="format">
+    <option value="mp4">MP4</option>
+    <option value="mkv">MKV</option>
+    <option value="webm">WEBM</option>
+    <option value="mov">MOV</option>
+</select>
+
+<select id="vcodec">
+    <option value="libx264">H.264</option>
+    <option value="libx265">H.265</option>
+</select>
+
+<select id="resolution">
+    <option value="original">Original</option>
+    <option value="720p">720p</option>
+    <option value="1080p">1080p</option>
+    <option value="1440p">1440p</option>
+    <option value="2160p">2160p</option>
+</select>
+
+<select id="fps">
+    <option value="original">Original</option>
+    <option value="24">24</option>
+    <option value="30">30</option>
+    <option value="60">60</option>
+</select>
+
+<p>Video Bitrate: <span id="videoBitrateValue"></span> kbps</p>
+
+<input
+    id="videoBitrate"
+    type="range"
+    min="500"
+    max="30000"
+    value="5000">
+
+<p>Audio Bitrate: <span id="audioBitrateValue"></span> kbps</p>
+   
+<input
+    id="audioBitrate"
+    type="range"
+    min="64"
+    max="320"
+    value="128">
+
+        <!-- Convert -->
+
+        <section class="card">
+            
+            <button id="convertBtn">Convert</button>
+            <div id="progressContainer">
+
+                <progress
+                    id="progressBar"
+                    value="0"
+                    max="100">
+                </progress>
+
+                <p id="progressText">0%</p>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/config.js"></script>
+<script src="js/upload.js"></script>
+
+</body>
+
+</html>
